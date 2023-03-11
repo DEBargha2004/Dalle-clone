@@ -3,6 +3,11 @@ import cors from 'cors'
 import {router} from './routes/route.js'
 import cookieParser from 'cookie-parser'
 import { signRoute } from './routes/sign.js'
+import fs from 'fs'
+
+if(!fs.existsSync('image')){
+    fs.mkdirSync('image')
+}
 
 const app = express()
 app.use(cors({

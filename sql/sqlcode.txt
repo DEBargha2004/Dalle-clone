@@ -1,0 +1,21 @@
+create table cookieinfo (
+    id bigint primary key,
+    cookie varchar(255),
+    emailid varchar(255)
+);
+
+create table itemlist(
+    username varchar(255),
+    prompt varchar(255),
+    location varchar(255),
+    imageNum int primary key auto_increment
+);
+
+create table userinfo(
+    id bigint primary key,
+    firstname varchar(255),
+    lastname varchar(255),
+    emailid varchar(255),
+    password varchar(255)
+);
+
