@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body,#root{
+    height: 100%;
+    width: 100%;
+}
+
+.dialog-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.dialog-container img{
+    border-radius: 5px;
+}
+.dialog-container div{
+    margin-left: 35px;
+    width: 60%;
+    color: rgb(78, 78, 78);
+    font-size: 18px;
+}
+.result-image-container:hover{
+    transform: scale(0.97);
+}
+
+.dialog-prompt::-webkit-scrollbar{
+    display: none;
+}
+.result-image-container{
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.showcase-image{
+    transition: 0.2s;
+}
+.showcase-image:hover{
+    transform: scale(0.99);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.account{
+    color: rgb(161, 161, 161);
+}
